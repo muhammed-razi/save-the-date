@@ -961,6 +961,110 @@ body::before {
   .family-divider-v { display:none; }
   .muhurtham-grid { grid-template-columns:1fr 1fr; }
 }
+   /* =====================================================
+   MOBILE RESPONSIVE DESIGN
+===================================================== */
+@media screen and (max-width:768px){
+
+  body{
+    padding:10px;
+    overflow-x:hidden;
+  }
+
+  .family-section,
+  .rsvp-section{
+    padding-left:15px;
+    padding-right:15px;
+  }
+
+  .family-cols{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    gap:20px;
+  }
+
+  .family-divider-v{
+    display:none;
+  }
+
+  .family-col-title{
+    font-size:10px;
+    letter-spacing:2px;
+  }
+
+  .family-name{
+    font-size:14px;
+    line-height:1.8;
+  }
+
+  .rsvp-box{
+    padding:18px;
+  }
+
+  .rsvp-title{
+    font-size:16px;
+  }
+
+  .rsvp-text{
+    font-size:14px;
+    line-height:1.7;
+  }
+
+  img{
+    max-width:100%;
+    height:auto;
+  }
+
+  h1{
+    font-size:28px !important;
+  }
+
+  h2{
+    font-size:22px !important;
+  }
+
+  h3{
+    font-size:18px !important;
+  }
+
+  p,span,div{
+    word-wrap:break-word;
+  }
+
+  iframe{
+    width:100% !important;
+    height:300px !important;
+  }
+
+  button,
+  .btn{
+    width:100%;
+  }
+}
+
+@media screen and (max-width:480px){
+
+  h1{
+    font-size:24px !important;
+  }
+
+  h2{
+    font-size:20px !important;
+  }
+
+  h3{
+    font-size:16px !important;
+  }
+
+  .rsvp-title{
+    font-size:15px;
+  }
+
+  .family-name{
+    font-size:13px;
+  }
+}
 </style>
 </head>
 <body>
