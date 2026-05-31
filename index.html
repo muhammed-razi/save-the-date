@@ -3,237 +3,204 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Nikah Invitation — Muhammed Razi & Rizwana</title>
+<title>Wedding Invitation — Nikah Ceremony</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cinzel+Decorative:wght@400;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet"/>
 
 <style>
 :root{
-  --green:#0f3d2e;
-  --green-2:#145c43;
-  --gold:#c9a227;
-  --gold-2:#e6c45a;
-  --cream:#fbf7ef;
-  --dark:#1d1b16;
-  --muted:#7a6a55;
+--ivory:#fbf7f0;
+--gold:#b8860b;
+--gold2:#d4a017;
+--green:#1f5f4a;
+--dark:#2c1b12;
+--muted:#6b5a4a;
+--maroon:#6b1f2a;
+--border:rgba(184,134,11,0.3);
 }
 
-/* BASE */
 *{margin:0;padding:0;box-sizing:border-box;}
 body{
-  background:var(--cream);
-  font-family:'Cinzel',serif;
-  color:var(--dark);
+font-family:'IM Fell English',serif;
+background:var(--ivory);
+color:var(--dark);
 }
 
-/* BACKGROUND */
-body::before{
-  content:'';
-  position:fixed;inset:0;
-  background:
-    radial-gradient(circle at 20% 20%, rgba(201,162,39,0.08), transparent 50%),
-    radial-gradient(circle at 80% 70%, rgba(15,61,46,0.08), transparent 50%);
-  pointer-events:none;
+.page{
+max-width:700px;
+margin:auto;
+padding:20px;
 }
 
-/* WRAP */
-.wrap{
-  max-width:760px;
-  margin:auto;
-  padding:20px;
-}
-
-/* CARD */
 .card{
-  background:linear-gradient(145deg,#fff 0%, #fbf7ef 100%);
-  border:2px solid var(--gold);
-  border-radius:6px;
-  overflow:hidden;
-  box-shadow:0 10px 40px rgba(0,0,0,0.1);
+background:linear-gradient(180deg,#fff 0%,#fbf7f0 100%);
+border:1px solid var(--gold);
+padding:30px;
+border-radius:6px;
+box-shadow:0 10px 40px rgba(0,0,0,0.08);
 }
 
-/* HEADER */
 .header{
-  background:linear-gradient(90deg,var(--green),var(--green-2));
-  color:#fff;
-  text-align:center;
-  padding:18px;
+text-align:center;
+padding:20px;
+border-bottom:2px solid var(--gold);
 }
+
 .header h1{
-  font-size:20px;
-  letter-spacing:3px;
+font-size:28px;
+color:var(--maroon);
+letter-spacing:2px;
 }
+
 .header p{
-  font-size:10px;
-  opacity:0.8;
+font-size:12px;
+color:var(--muted);
+letter-spacing:3px;
+text-transform:uppercase;
 }
 
-/* CRESCENT */
-.crescent{
-  font-size:40px;
-  color:var(--gold);
-  text-align:center;
-  margin:10px 0;
+.bismillah{
+text-align:center;
+font-size:22px;
+color:var(--green);
+margin:20px 0;
 }
 
-/* NAMES */
 .names{
-  text-align:center;
-  padding:25px 15px;
-}
-.names h2{
-  font-size:28px;
-  color:var(--green);
-}
-.names span{
-  color:var(--gold);
-  font-size:20px;
-}
-.sub{
-  font-size:12px;
-  color:var(--muted);
-  margin-top:6px;
+text-align:center;
+padding:20px 0;
 }
 
-/* DATE */
-.date{
-  text-align:center;
-  padding:20px;
-  background:rgba(201,162,39,0.08);
-  border-top:1px solid var(--gold);
-  border-bottom:1px solid var(--gold);
-}
-.date h3{
-  font-size:26px;
-  color:var(--green);
-}
-.date p{
-  font-size:12px;
-  color:var(--muted);
+.name{
+font-size:34px;
+color:var(--dark);
 }
 
-/* EVENTS */
-.section-title{
-  text-align:center;
-  margin:20px 0 10px;
-  color:var(--green);
-  font-size:14px;
+.and{
+font-size:28px;
+color:var(--gold2);
+margin:10px 0;
+}
+
+.parents{
+font-size:12px;
+color:var(--muted);
+margin-top:5px;
+}
+
+.section{
+margin-top:25px;
+padding:15px;
+border-top:1px solid var(--border);
+}
+
+.section h2{
+text-align:center;
+font-size:14px;
+letter-spacing:3px;
+color:var(--gold);
+margin-bottom:10px;
+text-transform:uppercase;
+}
+
+.info{
+text-align:center;
+font-size:14px;
+color:var(--dark);
+line-height:1.8;
 }
 
 .event{
-  display:flex;
-  gap:12px;
-  padding:12px;
-  border-left:4px solid var(--gold);
-  margin:10px 0;
-  background:#fff;
-}
-.event .icon{
-  font-size:20px;
-}
-.event h4{
-  font-size:13px;
-  color:var(--dark);
-}
-.event p{
-  font-size:11px;
-  color:var(--muted);
+margin:10px 0;
+padding:10px;
+border-left:3px solid var(--gold);
+background:#fff;
 }
 
-/* VENUE */
-.venue{
-  text-align:center;
-  padding:20px;
-}
-.venue h3{
-  color:var(--green);
-}
-.btn{
-  display:inline-block;
-  margin-top:10px;
-  padding:10px 18px;
-  background:var(--green);
-  color:#fff;
-  text-decoration:none;
-  font-size:11px;
-  border-radius:4px;
+.event-title{
+font-weight:bold;
 }
 
-/* FOOTER */
 .footer{
-  background:var(--green);
-  color:#fff;
-  text-align:center;
-  padding:12px;
-  font-size:11px;
+text-align:center;
+margin-top:20px;
+font-size:12px;
+color:var(--muted);
 }
 </style>
 </head>
 
 <body>
 
-<div class="wrap">
+<div class="page">
 <div class="card">
 
-<!-- HEADER -->
 <div class="header">
-  <h1>NIKAH INVITATION</h1>
-  <p>In the name of Allah, the Most Gracious, the Most Merciful</p>
+<p>Wedding Invitation</p>
+<h1>Walima Ceremony</h1>
 </div>
 
-<div class="crescent">☪</div>
+<div class="bismillah">
+بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيم
+</div>
 
-<!-- NAMES -->
 <div class="names">
-  <h2>Muhammed Razi <span>&</span> Rizwana</h2>
-  <div class="sub">Request the honor of your presence at their Nikah Ceremony</div>
+<div class="name">Muhammed Razi</div>
+<div class="parents">S/o Mr. Rajan & Mrs. Lakshmi</div>
+
+<div class="and">&</div>
+
+<div class="name">Rizwana Jafer Ali</div>
+<div class="parents">D/o Mr. Suresh & Mrs. Meena</div>
 </div>
 
-<!-- DATE -->
-<div class="date">
-  <h3>14 December 2026</h3>
-  <p>Sunday · 7:41 AM Nikah · 6:30 PM Walima</p>
+<div class="section">
+<h2>Marriage Ceremony</h2>
+<div class="info">
+We request the honor of your presence at the Nikah ceremony and wedding celebration.
+</div>
 </div>
 
-<!-- EVENTS -->
-<div class="section-title">CEREMONIES</div>
+<div class="section">
+<h2>Date & Time</h2>
+<div class="info">
+Sunday, 14 December 2026<br/>
+Nikah: 7:41 AM<br/>
+Walima: 6:30 PM
+</div>
+</div>
+
+<div class="section">
+<h2>Venue</h2>
+<div class="info">
+Bolgatty Palace & Island Resort<br/>
+Kochi, Kerala
+</div>
+</div>
+
+<div class="section">
+<h2>Events</h2>
 
 <div class="event">
-  <div class="icon">🕌</div>
-  <div>
-    <h4>Nikah Ceremony</h4>
-    <p>Islamic marriage contract performed with blessings, dua & Quran recitation.</p>
-  </div>
+<div class="event-title">Nikah Ceremony</div>
+Morning sacred marriage contract
 </div>
 
 <div class="event">
-  <div class="icon">🤲</div>
-  <div>
-    <h4>Walima Reception</h4>
-    <p>Grand dinner hosted by the groom’s family in celebration of the union.</p>
-  </div>
+<div class="event-title">Lunch</div>
+Traditional wedding feast
 </div>
 
 <div class="event">
-  <div class="icon">🌙</div>
-  <div>
-    <h4>Du’a & Gathering</h4>
-    <p>Family gathering with prayers for a blessed married life.</p>
-  </div>
+<div class="event-title">Walima Reception</div>
+Evening celebration with family & friends
 </div>
 
-<!-- VENUE -->
-<div class="venue">
-  <h3>Venue</h3>
-  <p>Bolgatty Palace & Island Resort, Kochi</p>
-  <a class="btn" href="https://maps.google.com/?q=Bolgatty+Palace+Kochi" target="_blank">
-    View Location
-  </a>
 </div>
 
-<!-- FOOTER -->
 <div class="footer">
-  May Allah bless this union with love, mercy & barakah
+With blessings of Allah and our families<br/>
+We warmly invite you to join us
 </div>
 
 </div>
